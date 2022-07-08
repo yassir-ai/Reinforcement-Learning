@@ -1,2 +1,3 @@
 *.tex linguist-detectable=false
 *.html linguist-detectable=false
+*.sty linguist-detectable=false
