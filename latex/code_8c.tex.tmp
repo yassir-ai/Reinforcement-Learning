@@ -1,0 +1,197 @@
+\hypertarget{code_8c}{}\doxysection{Référence du fichier code.\+c}
+\label{code_8c}\index{code.c@{code.c}}
+
+
+fichier de fonctions.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}code.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de code.\+c\+:
+% FIG 0
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{code_8c_a576deba871c2da94fb3e0c9444be960c}{play\+\_\+with\+\_\+texture\+\_\+3}} (S\+D\+L\+\_\+\+Texture $\ast$my\+\_\+texture, S\+D\+L\+\_\+\+Renderer $\ast$renderer, S\+D\+L\+\_\+\+Rect destination, S\+D\+L\+\_\+\+Rect source)
+\begin{DoxyCompactList}\small\item\em Fonction d\textquotesingle{}affichage d\textquotesingle{}une portion d\textquotesingle{}une image dans une partie précise de la fenetre. \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{code_8c_ac0561f3c85b9263d3a172717303fd79a}{load\+\_\+texture\+\_\+from\+\_\+image}} (char $\ast$file\+\_\+image\+\_\+name, S\+D\+L\+\_\+\+Window $\ast$window, S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Fonction de création de texture à partir d\textquotesingle{}un fichier image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{code_8c_a11050ac10bc55a12e3577922f2455027}{end\+\_\+sdl}} (char ok, char const $\ast$msg, S\+D\+L\+\_\+\+Window $\ast$window, S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Fonction de gestion des erreurs de chargement et intialisation des variables d\textquotesingle{}affichage. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{code_8c_a204f7476c3614cdbba0eed29b9e031b7}{max\+\_\+l}} (float Q\+\_\+matrice\mbox{[}N\+B\+\_\+\+E\+T\+AT\mbox{]}\mbox{[}N\+B\+\_\+\+A\+C\+T\+I\+ON\mbox{]}, int etat\+\_\+cour)
+\begin{DoxyCompactList}\small\item\em Fonction qui trouve l\textquotesingle{}action de la plus grande qualité entre les actions possible dans cet état. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{code_8c_a9591c543e298345eac3a7683a474da14}\label{code_8c_a9591c543e298345eac3a7683a474da14}} 
+int {\bfseries max\+\_\+q\+\_\+etat} (float Q\+\_\+matrice\mbox{[}N\+B\+\_\+\+E\+T\+AT\mbox{]}\mbox{[}N\+B\+\_\+\+A\+C\+T\+I\+ON\mbox{]}, int etat\+\_\+cour)
+\item 
+\mbox{\Hypertarget{code_8c_a56ae82f614a46240c2a75d14dfae0dfc}\label{code_8c_a56ae82f614a46240c2a75d14dfae0dfc}} 
+void {\bfseries qualite\+\_\+des\+\_\+actions} (float Q\+\_\+matrice\mbox{[}N\+B\+\_\+\+E\+T\+AT\mbox{]}\mbox{[}N\+B\+\_\+\+A\+C\+T\+I\+ON\mbox{]}, float Recomp\+\_\+matrice\mbox{[}N\+B\+\_\+\+E\+T\+AT\mbox{]}\mbox{[}N\+B\+\_\+\+A\+C\+T\+I\+ON\mbox{]}, int etat\+\_\+prec, int etat\+\_\+cour, \mbox{\hyperlink{code_8h_a2f4ab7bf743142dae2e459aa18f9f1d4}{action}} act)
+\item 
+int \mbox{\hyperlink{code_8c_a8eb708fa2801926bd31dfec73ac7236e}{progress\+\_\+etat}} (int etat\+\_\+prec, \mbox{\hyperlink{code_8h_a2f4ab7bf743142dae2e459aa18f9f1d4}{action}} act)
+\begin{DoxyCompactList}\small\item\em Fonction de détermination de l\textquotesingle{}état courant à partir de l\textquotesingle{}état précedant et l\textquotesingle{}action prise. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{code_8c_a671ab641d04bca6a92c85b3a1d621648}\label{code_8c_a671ab641d04bca6a92c85b3a1d621648}} 
+float {\bfseries suite\+\_\+epsilon} (float n)
+\item 
+\mbox{\Hypertarget{code_8c_a4815f580dbf894db319884a74386f7a5}\label{code_8c_a4815f580dbf894db319884a74386f7a5}} 
+void {\bfseries ecriture\+\_\+fichier} (char $\ast$nom, float Q\+\_\+matrice\mbox{[}N\+B\+\_\+\+E\+T\+AT\mbox{]}\mbox{[}N\+B\+\_\+\+A\+C\+T\+I\+ON\mbox{]}, int compteur)
+\item 
+void \mbox{\hyperlink{code_8c_a8b36c1e809f9c74ea14f16241667bfda}{lecture\+\_\+\+Q\+\_\+matrice}} (char $\ast$nom, float Q\+\_\+matrice\mbox{[}N\+B\+\_\+\+E\+T\+AT\mbox{]}\mbox{[}N\+B\+\_\+\+A\+C\+T\+I\+ON\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction de lecture de la matrice de qualités à partir d\textquotesingle{}un fichier texte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{code_8c_a5d434e54500d7536f6a9d816b2c32870}{ecriture\+\_\+data}} (char $\ast$nom, int a, int b)
+\begin{DoxyCompactList}\small\item\em Fonction d\textquotesingle{}écriture de deux entiers dans un fichier (ajoute des données, n\textquotesingle{}écrase pas) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+fichier de fonctions. 
+
+\begin{DoxyAuthor}{Auteur}
+Yassir Mrani Alaoui, Oussama Diai, Anas Elhoudri 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+1 juillet 2022
+\end{DoxyDate}
+Fichier de fonctions support pour le projet d\textquotesingle{}apprentissage par renforcement 
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{code_8c_a5d434e54500d7536f6a9d816b2c32870}\label{code_8c_a5d434e54500d7536f6a9d816b2c32870}} 
+\index{code.c@{code.c}!ecriture\_data@{ecriture\_data}}
+\index{ecriture\_data@{ecriture\_data}!code.c@{code.c}}
+\doxysubsubsection{\texorpdfstring{ecriture\_data()}{ecriture\_data()}}
+{\footnotesize\ttfamily void ecriture\+\_\+data (\begin{DoxyParamCaption}\item[{char $\ast$}]{nom,  }\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Fonction d\textquotesingle{}écriture de deux entiers dans un fichier (ajoute des données, n\textquotesingle{}écrase pas) 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nom} & Nom du fichier dans lequel l\textquotesingle{}écriture aura lieu \\
+\hline
+{\em a} & premier entier à écrire \\
+\hline
+{\em b} & deuxieme entier à écrire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{code_8c_a11050ac10bc55a12e3577922f2455027}\label{code_8c_a11050ac10bc55a12e3577922f2455027}} 
+\index{code.c@{code.c}!end\_sdl@{end\_sdl}}
+\index{end\_sdl@{end\_sdl}!code.c@{code.c}}
+\doxysubsubsection{\texorpdfstring{end\_sdl()}{end\_sdl()}}
+{\footnotesize\ttfamily void end\+\_\+sdl (\begin{DoxyParamCaption}\item[{char}]{ok,  }\item[{char const $\ast$}]{msg,  }\item[{S\+D\+L\+\_\+\+Window $\ast$}]{window,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Fonction de gestion des erreurs de chargement et intialisation des variables d\textquotesingle{}affichage. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ok} & caractère indicant la fin normale ou anormale du programme \\
+\hline
+{\em msg} & chaine de caractères agissant comme message d\textquotesingle{}erreur \\
+\hline
+{\em window} & fenetre d\textquotesingle{}affichage \\
+\hline
+{\em renderer} & le S\+D\+L\+\_\+\+Renderer pour affichage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{code_8c_a8b36c1e809f9c74ea14f16241667bfda}\label{code_8c_a8b36c1e809f9c74ea14f16241667bfda}} 
+\index{code.c@{code.c}!lecture\_Q\_matrice@{lecture\_Q\_matrice}}
+\index{lecture\_Q\_matrice@{lecture\_Q\_matrice}!code.c@{code.c}}
+\doxysubsubsection{\texorpdfstring{lecture\_Q\_matrice()}{lecture\_Q\_matrice()}}
+{\footnotesize\ttfamily void lecture\+\_\+\+Q\+\_\+matrice (\begin{DoxyParamCaption}\item[{char $\ast$}]{nom,  }\item[{float}]{Q\+\_\+matrice\mbox{[}\+N\+B\+\_\+\+E\+T\+A\+T\mbox{]}\mbox{[}\+N\+B\+\_\+\+A\+C\+T\+I\+O\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction de lecture de la matrice de qualités à partir d\textquotesingle{}un fichier texte. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nom} & Le nom du fichier duquel la lecture de la matrice de qualité aura lieu \\
+\hline
+{\em Q\+\_\+matrice} & matrice des qualités \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{code_8c_ac0561f3c85b9263d3a172717303fd79a}\label{code_8c_ac0561f3c85b9263d3a172717303fd79a}} 
+\index{code.c@{code.c}!load\_texture\_from\_image@{load\_texture\_from\_image}}
+\index{load\_texture\_from\_image@{load\_texture\_from\_image}!code.c@{code.c}}
+\doxysubsubsection{\texorpdfstring{load\_texture\_from\_image()}{load\_texture\_from\_image()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture $\ast$ load\+\_\+texture\+\_\+from\+\_\+image (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+\_\+image\+\_\+name,  }\item[{S\+D\+L\+\_\+\+Window $\ast$}]{window,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Fonction de création de texture à partir d\textquotesingle{}un fichier image. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em file\+\_\+image\+\_\+name} & nom du fichier image \\
+\hline
+{\em window} & La fenetre S\+D\+L\+\_\+\+Window dans laquelle l\textquotesingle{}affichage aura lieu \\
+\hline
+{\em renderer} & le S\+D\+L\+\_\+\+Renderer pour affichage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+la texture crée à partie du fichier image 
+\end{DoxyReturn}
+\mbox{\Hypertarget{code_8c_a204f7476c3614cdbba0eed29b9e031b7}\label{code_8c_a204f7476c3614cdbba0eed29b9e031b7}} 
+\index{code.c@{code.c}!max\_l@{max\_l}}
+\index{max\_l@{max\_l}!code.c@{code.c}}
+\doxysubsubsection{\texorpdfstring{max\_l()}{max\_l()}}
+{\footnotesize\ttfamily int max\+\_\+l (\begin{DoxyParamCaption}\item[{float}]{Q\+\_\+matrice\mbox{[}\+N\+B\+\_\+\+E\+T\+A\+T\mbox{]}\mbox{[}\+N\+B\+\_\+\+A\+C\+T\+I\+O\+N\mbox{]},  }\item[{int}]{etat\+\_\+cour }\end{DoxyParamCaption})}
+
+
+
+Fonction qui trouve l\textquotesingle{}action de la plus grande qualité entre les actions possible dans cet état. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Q\+\_\+matrice} & matrice des qualités des actions suivant les différents états \\
+\hline
+{\em etat\+\_\+cour} & l\textquotesingle{}etat courant à traiter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le résultat de la fonction étant l\textquotesingle{}action ayant la plus grande qualité pour l\textquotesingle{}état courant 
+\end{DoxyReturn}
+\mbox{\Hypertarget{code_8c_a576deba871c2da94fb3e0c9444be960c}\label{code_8c_a576deba871c2da94fb3e0c9444be960c}} 
+\index{code.c@{code.c}!play\_with\_texture\_3@{play\_with\_texture\_3}}
+\index{play\_with\_texture\_3@{play\_with\_texture\_3}!code.c@{code.c}}
+\doxysubsubsection{\texorpdfstring{play\_with\_texture\_3()}{play\_with\_texture\_3()}}
+{\footnotesize\ttfamily void play\+\_\+with\+\_\+texture\+\_\+3 (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Texture $\ast$}]{my\+\_\+texture,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{S\+D\+L\+\_\+\+Rect}]{destination,  }\item[{S\+D\+L\+\_\+\+Rect}]{source }\end{DoxyParamCaption})}
+
+
+
+Fonction d\textquotesingle{}affichage d\textquotesingle{}une portion d\textquotesingle{}une image dans une partie précise de la fenetre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em my\+\_\+texture} & texture S\+DL à afficher \\
+\hline
+{\em renderer} & un S\+D\+L\+\_\+\+Renderer pour affichage \\
+\hline
+{\em destination} & désigne la position et la taille de l\textquotesingle{}affichage de la texture dans la fenetre \\
+\hline
+{\em source} & désigne la position et la taille de la partie de la texture à afficher \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{code_8c_a8eb708fa2801926bd31dfec73ac7236e}\label{code_8c_a8eb708fa2801926bd31dfec73ac7236e}} 
+\index{code.c@{code.c}!progress\_etat@{progress\_etat}}
+\index{progress\_etat@{progress\_etat}!code.c@{code.c}}
+\doxysubsubsection{\texorpdfstring{progress\_etat()}{progress\_etat()}}
+{\footnotesize\ttfamily int progress\+\_\+etat (\begin{DoxyParamCaption}\item[{int}]{etat\+\_\+prec,  }\item[{\mbox{\hyperlink{code_8h_a2f4ab7bf743142dae2e459aa18f9f1d4}{action}}}]{act }\end{DoxyParamCaption})}
+
+
+
+Fonction de détermination de l\textquotesingle{}état courant à partir de l\textquotesingle{}état précedant et l\textquotesingle{}action prise. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em etat\+\_\+prec} & Etat précedant \\
+\hline
+{\em act} & Action prise à l\textquotesingle{}état précedant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Retourne l\textquotesingle{}etat produit de l\textquotesingle{}action prise et de l\textquotesingle{}état précedant. Prends la valeur 100 si l\textquotesingle{}action est impossible. 
+\end{DoxyReturn}
