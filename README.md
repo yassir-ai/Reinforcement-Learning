@@ -4,4 +4,6 @@ In machine learning there are several subcategories. We will focus here on a typ
 
 
 To see the project website:
+
+https://perso.isima.fr/~yjdaniel/cours/projet_etu/projet.html
 https://yassirmranialaoui.wixsite.com/apprentissage-par-re
