@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Apprentissage par Renforcement - ZZ1: Référence du fichier code.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Apprentissage par Renforcement - ZZ1
+   &#160;<span id="projectnumber">Phase 2</span>
+   </div>
+   <div id="projectbrief">Projet de fin d&#39;année ZZ1</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier code.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fichier de prototypes des fonctions de <a class="el" href="code_8c.html" title="fichier de fonctions.">code.c</a> et des variables globales et symboliques.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;SDL2/SDL_image.h&gt;</code><br />
+<code>#include &lt;SDL2/SDL.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de code.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="code_8h__incl.png" border="0" usemap="#code_8h" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="code_8h__dep__incl.png" border="0" usemap="#code_8hdep" alt=""/></div>
+<!-- MAP 1 -->
+</div>
+</div>
+<p><a href="code_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a459fdc94d1460e49be8eb83d83e99e0b"><td class="memItemLeft" align="right" valign="top"><a id="a459fdc94d1460e49be8eb83d83e99e0b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NB_ETAT</b>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:a459fdc94d1460e49be8eb83d83e99e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a726db5d0e2803e025a8677641c60887b"><td class="memItemLeft" align="right" valign="top"><a id="a726db5d0e2803e025a8677641c60887b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NB_ACTION</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a726db5d0e2803e025a8677641c60887b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b50f1ca7258a9862c39d3ed354bf7c"><td class="memItemLeft" align="right" valign="top"><a id="a06b50f1ca7258a9862c39d3ed354bf7c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>epsilon</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a06b50f1ca7258a9862c39d3ed354bf7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa816ab3cd347f9fb8805f6296052c9c3"><td class="memItemLeft" align="right" valign="top"><a id="aa816ab3cd347f9fb8805f6296052c9c3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>alpha</b>&#160;&#160;&#160;0.9</td></tr>
+<tr class="separator:aa816ab3cd347f9fb8805f6296052c9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a055cdf35baaa8c852dd8835b80bea4c6"><td class="memItemLeft" align="right" valign="top"><a id="a055cdf35baaa8c852dd8835b80bea4c6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>a_suite</b>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:a055cdf35baaa8c852dd8835b80bea4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:a7407c695d83fd82fad6d5de52ca3e371"><td class="memItemLeft" align="right" valign="top"><a id="a7407c695d83fd82fad6d5de52ca3e371"></a>
+typedef enum <a class="el" href="code_8h.html#a2f4ab7bf743142dae2e459aa18f9f1d4">action</a>&#160;</td><td class="memItemRight" valign="bottom"><b>action</b></td></tr>
+<tr class="separator:a7407c695d83fd82fad6d5de52ca3e371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:a2f4ab7bf743142dae2e459aa18f9f1d4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code_8h.html#a2f4ab7bf743142dae2e459aa18f9f1d4">action</a> { <a class="el" href="code_8h.html#a2f4ab7bf743142dae2e459aa18f9f1d4aebc281bf093563220c2270ba57dedfce">up</a>, 
+<a class="el" href="code_8h.html#a2f4ab7bf743142dae2e459aa18f9f1d4a00156fc42b17a87d0746d97b42caf296">down</a>, 
+<a class="el" href="code_8h.html#a2f4ab7bf743142dae2e459aa18f9f1d4af763d610923b0c4614e8ecd65212666a">right</a>, 
+<a class="el" href="code_8h.html#a2f4ab7bf743142dae2e459aa18f9f1d4ab0ac36b187aa60c167ffcead3d5a03c0">left</a>
+ }</td></tr>
+<tr class="separator:a2f4ab7bf743142dae2e459aa18f9f1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a576deba871c2da94fb3e0c9444be960c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code_8h.html#a576deba871c2da94fb3e0c9444be960c">play_with_texture_3</a> (SDL_Texture *my_texture, SDL_Renderer *renderer, SDL_Rect destination, SDL_Rect source)</td></tr>
+<tr class="memdesc:a576deba871c2da94fb3e0c9444be960c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction d'affichage d'une portion d'une image dans une partie précise de la fenetre.  <a href="code_8h.html#a576deba871c2da94fb3e0c9444be960c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a576deba871c2da94fb3e0c9444be960c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9116d7ea828240b415c9f4a87bc593"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code_8h.html#a6b9116d7ea828240b415c9f4a87bc593">load_texture_from_image</a> (char *file_image_name, SDL_Window *window, SDL_Renderer *renderer)</td></tr>
+<tr class="memdesc:a6b9116d7ea828240b415c9f4a87bc593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de création de texture à partir d'un fichier image.  <a href="code_8h.html#a6b9116d7ea828240b415c9f4a87bc593">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6b9116d7ea828240b415c9f4a87bc593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11050ac10bc55a12e3577922f2455027"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code_8h.html#a11050ac10bc55a12e3577922f2455027">end_sdl</a> (char ok, char const *msg, SDL_Window *window, SDL_Renderer *renderer)</td></tr>
+<tr class="memdesc:a11050ac10bc55a12e3577922f2455027"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de gestion des erreurs de chargement et intialisation des variables d'affichage.  <a href="code_8h.html#a11050ac10bc55a12e3577922f2455027">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a11050ac10bc55a12e3577922f2455027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9591c543e298345eac3a7683a474da14"><td class="memItemLeft" align="right" valign="top"><a id="a9591c543e298345eac3a7683a474da14"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>max_q_etat</b> (float Q_matrice[NB_ETAT][NB_ACTION], int etat_cour)</td></tr>
+<tr class="separator:a9591c543e298345eac3a7683a474da14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56ae82f614a46240c2a75d14dfae0dfc"><td class="memItemLeft" align="right" valign="top"><a id="a56ae82f614a46240c2a75d14dfae0dfc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>qualite_des_actions</b> (float Q_matrice[NB_ETAT][NB_ACTION], float Recomp_matrice[NB_ETAT][NB_ACTION], int etat_prec, int etat_cour, <a class="el" href="code_8h.html#a2f4ab7bf743142dae2e459aa18f9f1d4">action</a> act)</td></tr>
+<tr class="separator:a56ae82f614a46240c2a75d14dfae0dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d8531fb26e3b786c2ba4103f4efdc7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code_8h.html#a97d8531fb26e3b786c2ba4103f4efdc7">progress_etat</a> (int etet_prec, <a class="el" href="code_8h.html#a2f4ab7bf743142dae2e459aa18f9f1d4">action</a> act)</td></tr>
+<tr class="memdesc:a97d8531fb26e3b786c2ba4103f4efdc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de détermination de l'état courant à partir de l'état précedant et l'action prise.  <a href="code_8h.html#a97d8531fb26e3b786c2ba4103f4efdc7">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a97d8531fb26e3b786c2ba4103f4efdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671ab641d04bca6a92c85b3a1d621648"><td class="memItemLeft" align="right" valign="top"><a id="a671ab641d04bca6a92c85b3a1d621648"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>suite_epsilon</b> (float n)</td></tr>
+<tr class="separator:a671ab641d04bca6a92c85b3a1d621648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4815f580dbf894db319884a74386f7a5"><td class="memItemLeft" align="right" valign="top"><a id="a4815f580dbf894db319884a74386f7a5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ecriture_fichier</b> (char *nom, float Q_matrice[NB_ETAT][NB_ACTION], int compteur)</td></tr>
+<tr class="separator:a4815f580dbf894db319884a74386f7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b36c1e809f9c74ea14f16241667bfda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code_8h.html#a8b36c1e809f9c74ea14f16241667bfda">lecture_Q_matrice</a> (char *nom, float Q_matrice[NB_ETAT][NB_ACTION])</td></tr>
+<tr class="memdesc:a8b36c1e809f9c74ea14f16241667bfda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de lecture de la matrice de qualités à partir d'un fichier texte.  <a href="code_8h.html#a8b36c1e809f9c74ea14f16241667bfda">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8b36c1e809f9c74ea14f16241667bfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d434e54500d7536f6a9d816b2c32870"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code_8h.html#a5d434e54500d7536f6a9d816b2c32870">ecriture_data</a> (char *nom, int a, int b)</td></tr>
+<tr class="memdesc:a5d434e54500d7536f6a9d816b2c32870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction d'écriture de deux entiers dans un fichier (ajoute des données, n'écrase pas)  <a href="code_8h.html#a5d434e54500d7536f6a9d816b2c32870">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5d434e54500d7536f6a9d816b2c32870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fichier de prototypes des fonctions de <a class="el" href="code_8c.html" title="fichier de fonctions.">code.c</a> et des variables globales et symboliques. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Yassir Mrani Alaoui, Oussama Diai, Anas Elhoudri </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>Phase 2 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>1 juillet 2022 </dd></dl>
+</div><h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="a2f4ab7bf743142dae2e459aa18f9f1d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f4ab7bf743142dae2e459aa18f9f1d4">&#9670;&nbsp;</a></span>action</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="code_8h.html#a2f4ab7bf743142dae2e459aa18f9f1d4">action</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="a2f4ab7bf743142dae2e459aa18f9f1d4aebc281bf093563220c2270ba57dedfce"></a>up&#160;</td><td class="fielddoc"><p>Action de passage vers la case du haut </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2f4ab7bf743142dae2e459aa18f9f1d4a00156fc42b17a87d0746d97b42caf296"></a>down&#160;</td><td class="fielddoc"><p>Action de passage vers la case du bas </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2f4ab7bf743142dae2e459aa18f9f1d4af763d610923b0c4614e8ecd65212666a"></a>right&#160;</td><td class="fielddoc"><p>Action de passage vers la case de la droite </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2f4ab7bf743142dae2e459aa18f9f1d4ab0ac36b187aa60c167ffcead3d5a03c0"></a>left&#160;</td><td class="fielddoc"><p>Action de passage vers la case de la gauche </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a5d434e54500d7536f6a9d816b2c32870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d434e54500d7536f6a9d816b2c32870">&#9670;&nbsp;</a></span>ecriture_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ecriture_data </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction d'écriture de deux entiers dans un fichier (ajoute des données, n'écrase pas) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nom</td><td>Nom du fichier dans lequel l'écriture aura lieu </td></tr>
+    <tr><td class="paramname">a</td><td>premier entier à écrire </td></tr>
+    <tr><td class="paramname">b</td><td>deuxieme entier à écrire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a11050ac10bc55a12e3577922f2455027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11050ac10bc55a12e3577922f2455027">&#9670;&nbsp;</a></span>end_sdl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void end_sdl </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>ok</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Window *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>renderer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction de gestion des erreurs de chargement et intialisation des variables d'affichage. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ok</td><td>caractère indicant la fin normale ou anormale du programme </td></tr>
+    <tr><td class="paramname">msg</td><td>chaine de caractères agissant comme message d'erreur </td></tr>
+    <tr><td class="paramname">window</td><td>fenetre d'affichage </td></tr>
+    <tr><td class="paramname">renderer</td><td>le SDL_Renderer pour affichage </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8b36c1e809f9c74ea14f16241667bfda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b36c1e809f9c74ea14f16241667bfda">&#9670;&nbsp;</a></span>lecture_Q_matrice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lecture_Q_matrice </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Q_matrice</em>[NB_ETAT][NB_ACTION]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction de lecture de la matrice de qualités à partir d'un fichier texte. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nom</td><td>Le nom du fichier duquel la lecture de la matrice de qualité aura lieu </td></tr>
+    <tr><td class="paramname">Q_matrice</td><td>matrice des qualités </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6b9116d7ea828240b415c9f4a87bc593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b9116d7ea828240b415c9f4a87bc593">&#9670;&nbsp;</a></span>load_texture_from_image()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Texture* load_texture_from_image </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_image_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Window *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>renderer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction de création de texture à partir d'un fichier image. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_image_name</td><td>nom du fichier image </td></tr>
+    <tr><td class="paramname">window</td><td>La fenetre SDL_Window dans laquelle l'affichage aura lieu </td></tr>
+    <tr><td class="paramname">renderer</td><td>le SDL_Renderer pour affichage </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>la texture crée à partie du fichier image </dd></dl>
+
+</div>
+</div>
+<a id="a576deba871c2da94fb3e0c9444be960c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a576deba871c2da94fb3e0c9444be960c">&#9670;&nbsp;</a></span>play_with_texture_3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void play_with_texture_3 </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Texture *&#160;</td>
+          <td class="paramname"><em>my_texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>destination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction d'affichage d'une portion d'une image dans une partie précise de la fenetre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">my_texture</td><td>texture SDL à afficher </td></tr>
+    <tr><td class="paramname">renderer</td><td>un SDL_Renderer pour affichage </td></tr>
+    <tr><td class="paramname">destination</td><td>désigne la position et la taille de l'affichage de la texture dans la fenetre </td></tr>
+    <tr><td class="paramname">source</td><td>désigne la position et la taille de la partie de la texture à afficher </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a97d8531fb26e3b786c2ba4103f4efdc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97d8531fb26e3b786c2ba4103f4efdc7">&#9670;&nbsp;</a></span>progress_etat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int progress_etat </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>etat_prec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="code_8h.html#a2f4ab7bf743142dae2e459aa18f9f1d4">action</a>&#160;</td>
+          <td class="paramname"><em>act</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction de détermination de l'état courant à partir de l'état précedant et l'action prise. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">etat_prec</td><td>Etat précedant </td></tr>
+    <tr><td class="paramname">act</td><td>Action prise à l'état précedant </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Retourne l'etat produit de l'action prise et de l'état précedant. Prends la valeur 100 si l'action est impossible. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
